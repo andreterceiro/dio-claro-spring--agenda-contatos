@@ -37,6 +37,15 @@ public class Contato {
     }
 
     /**
+     * Setter of this.numero
+     *
+     * @param numero Numero to be setted
+     */
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+
+    /**
      * equals() method to help comparisons
      *
      * @param object Object to be compared to this object
