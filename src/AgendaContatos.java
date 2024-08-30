@@ -65,4 +65,30 @@ public class AgendaContatos {
         return null;
     }
 
+    /**
+     * Main method to tests in the CLI
+     */
+    public static void main(String[] args) {
+        AgendaContatos agendaContatos = new AgendaContatos();
+        agendaContatos.exibirContatos();
+
+        Contato contato1 = new Contato("André", 1);
+        Contato contato2 = new Contato("André", 2);
+        System.out.println(contato1.equals(contato2));
+
+        agendaContatos.adicionarContato("André", 11111111);
+        agendaContatos.adicionarContato("Júlio", 22222222);
+        agendaContatos.adicionarContato("Fátima", 33333333);
+        agendaContatos.adicionarContato("Thais", 44444444);
+        agendaContatos.adicionarContato("André", 55555555);
+
+        agendaContatos.exibirContatos();
+
+        agendaContatos.atualizarNumeroContato("andré", 77777777);
+        agendaContatos.exibirContatos();
+
+        agendaContatos.adicionarContato("Andrew", 88888888);
+        System.out.println(agendaContatos.pesquisarPorNome("And"));
+    }
+
 }
