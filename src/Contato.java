@@ -71,4 +71,13 @@ public class Contato {
     public int hasCode() {
         return Objects.hash(this.getNome());
     }
+
+    /**
+     * Help the task of transform an object of this class in a String
+     * 
+     * @return A string representation of the instance
+     */
+    public String toString() {
+        return "Contato: {nome: '" + this.getNome() + "', número: " + this.getNumero() + "'}";
+    }
 }
