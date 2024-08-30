@@ -60,7 +60,7 @@ public class Contato {
             return false;
         }
         Contato other = (Contato) object;
-        return this.getNome() == other.getNome();
+        return this.getNome().equals(other.getNome());
     }
 
     /**
@@ -68,7 +68,7 @@ public class Contato {
      *
      * @return Return the hash code related to this object
      */
-    public int hasCode() {
+    public int hashCode() {
         return Objects.hash(this.getNome());
     }
 
